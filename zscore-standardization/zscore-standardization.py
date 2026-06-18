@@ -10,7 +10,7 @@ def zscore_standardize(X, axis=0, eps=1e-12):
     p = np.mean(X, axis=axis, keepdims=True)   # p = mean
     q = np.std(X, axis=axis, keepdims=True)    # q = std
 
-    Z = (X - p) / (q + eps)
+    Y = (X - p) / (q + eps)
 
-    return Z
+    return Y
     pass
